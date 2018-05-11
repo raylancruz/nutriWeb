@@ -1,101 +1,77 @@
-<!DOCTYPE html>
+ï»¿<!DOCTYPE html>
 <html>
 
 <head>
-<meta charset="ISO-8859-1">
-<title>nutriWeb</title>
-<link rel="stylesheet" href="bootstrap-3.3.5/css/bootstrap.min.css" />
+	<meta charset="ISO-8859-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>NutriWeb</title>
+	<link rel="stylesheet" href="bootstrap-3.3.5/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="main.css" />
 </head>
+
 <body>
 	<br>
 
-	<!-- A classe container é uma classe css do  booststrap que organiza o layout( na forma do quadradinho -->
-	<div class="container">
-
-
+	<!-- A classe container Ã© uma classe css do booststrap que organiza o layout( na forma do quadradinho -->
+	<div id="index-content" class="container well well-sm">
 		<!-- Componente do login e do icone do nutriweb -->
-		<div class="col-md-12">
-			<div class="col-md-1">
-				<img src="images/logo_nutriWeb.png" class="img-responsive"
-					alt="Responsive image">
+		<div class="row">
+			<div class="col-xs-12">
+				<img src="images/logo_nutriWeb.png" alt="NutriWeb">
 			</div>
+		</div>
 
-			<!-- Cabeçalho da pagina -->
-			<div class="row">
-				<div class="col-md-12 wrapper text-center">
-					<p class="text-center">
-					<h1 style="color:green;">NutriWeb</h1>
-					</p>
-				</div>
-
+		<!-- CabeÃ§alho da pagina -->
+		<div class="row">
+			<div class="col-xs-12 wrapper text-center">
+				<p class="text-center">
+					<h1 style="color:green;">Bem Vindo</h1>
+				</p>
 			</div>
-			<br>
+		</div>
 
+		<br>
 
-			<div class="row">
-
-				<!-- a div está separando bonitinho as classes do css pra pagina ficar legal, parte do IMC -->
-				<div class="col-sm-4">
-					<div class="panel panel-success">
-						<div class="panel-heading text-center">Calculo do IMC</div>
-						<div class="panel-body">
-							<form action="calculo-imc.html">
-								<input type="image" src="images/calculo-de-indice-corporal-2.jpg"
-									alt="Calculo de IMC " class="img-rounded img-responsive">
-							</form>
-						</div>
+		<div id="index-content-options" class="row">
+			<!-- a div estÃ¡ separando bonitinho as classes do css pra pagina ficar legal, parte do IMC -->
+			<a href="calculo-imc.html" class="col-sm-4">
+				<div class="panel panel-success">
+					<div class="panel-heading text-center">Calculo do IMC</div>
+					<div class="panel-body">
+						<img src="images/calculo-de-indice-corporal-2.jpg" alt="Calculo de IMC" class="img-rounded img-responsive">
 					</div>
 				</div>
+			</a>
 
-
-
-
-				<!-- Alimentos -->
-				<div class="col-sm-4">
-					<div class="panel panel-success">
-						<div class="panel-heading text-center">Alimentos Saudáveis</div>
-						<div class="panel-body">
-							<form action="alimentos.html">
-								<input type="image" src="images/escolhas_saudáveis.png"
-									alt="Alimentos Saudaveis " class="img-rounded img-responsive">
-							</form>
-						</div>
+			<!-- Alimentos -->
+			<a href="alimentos.html" class="col-sm-4">
+				<div class="panel panel-success">
+					<div class="panel-heading text-center">Alimentos SaudÃ¡veis</div>
+					<div class="panel-body">
+						<img src="images/escolhas_saudaveis.png" alt="Alimentos SaudÃ¡veis" class="img-rounded img-responsive">
 					</div>
 				</div>
+			</a>
 
-				<!-- Atividades Fisicas -->
-				<div class="col-sm-4">
-					<div class="panel panel-success">
-						<div class="panel-heading text-center">Atividades Físicas</div>
-						<div class="panel-body">
-							<form action="atividades-fisicas.html">
-								<input type="image" src="images/atividades-fisicas-3.jpg"
-									alt="Atividades Físicas " class="img-rounded img-responsive">
-							</form>
-						</div>
+			<!-- Atividades Fisicas -->
+			<a href="atividades-fisicas.html" class="col-sm-4">
+				<div class="panel panel-success">
+					<div class="panel-heading text-center">Atividades FÃ­sicas</div>
+					<div class="panel-body">
+						<img type="image" src="images/atividades-fisicas-3.jpg" alt="Atividades FÃ­sicas" class="img-rounded img-responsive">
 					</div>
 				</div>
-
-
-			</div>
-
-
-
-
-
+			</a>
 		</div>
 
 		<!-- Rodape da pagina -->
 		<footer>
-			<div class="container">
-				<div class="row wrapper text-center">
-					<div class="well well-sm">
-						NutriWeb - 2018 <br>
-					</div>
-				</div>
+			<div class="row wrapper text-center">
+				NutriWeb - 2018
+				<br>
 			</div>
 		</footer>
 	</div>
-	
 </body>
+
 </html>

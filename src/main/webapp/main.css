@@ -1,0 +1,14 @@
+#index-content {
+    padding: 25px;
+}
+
+#index-content-options .panel-body {
+    align-items: center;
+    display: flex;
+    height: 220px;
+}
+
+#index-content-options .panel-body img {
+    max-height: 100%;
+    margin: auto;
+}
