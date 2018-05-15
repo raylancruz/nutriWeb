@@ -86,6 +86,11 @@
                         <form name="imcForm" action="CalculoIMC">
                             <div class="form-group">
                                 <input type="text" class="form-control"
+                                       placeholder="Digite o sua idade" name="peso" required>
+                            </div>
+
+                            <div class="form-group">
+                                <input type="text" class="form-control"
                                        placeholder="Digite o seu peso (em kg)" name="peso" required>
                             </div>
 
@@ -117,6 +122,9 @@
 
                                     <br>
                                     <%
+                                        // Obtem a idade do parametro da requisicao (la do formulario)
+                                        String idade = request.getParameter("idade");
+
                                         // Obtem o peso do parametro da requisicao (la do formulario)
                                         String peso = request.getParameter("peso");
 
@@ -125,7 +133,7 @@
 
                                         if (peso != null) {
                                             // Injeto esse trecho de HTML na pagina, com o peso e a altura...
-                                            out.println("<b>Sua massa &eacute; de " + peso + " kg e sua altura &eacute; de " + altura + " m.</b><br/></br>");
+                                            out.println("<b>Sua massa é de " + peso + " kg e sua altura é de " + altura + " m.</b><br/></br>");
 
                                             Double imc = Double.parseDouble(peso) / Math.pow(Double.parseDouble(altura), 2);
 
@@ -135,14 +143,14 @@
                                             StringBuilder sb = new StringBuilder();
 
                                             // Injeto esse trecho de HTML na pagina, com o IMC ja calculado...
-                                            sb.append("<br> Seu IMC &eacute; de <h4>" + df.format(imc) + "</h4>");
+                                            sb.append("<br> Seu IMC é de <h4>" + df.format(imc) + "</h4>");
 
 
                                             // if-else com os valores possiveis de IMC. Pra cada faixa de valor, eu gero uma mensagem diferente
                                             if (imc < 17) {
                                                 // muito abaixo do peso
                                             } else if (imc >= 17 && imc <= 18.49) {
-                                                // abaixo do peso
+
                                             } else if (imc >= 18.5 && imc <= 24.99) {
                                                 sb.append("<div class=\"alert alert-success alert-dismissible\" role=\"alert\">");
                                                 sb.append("<h3>Parabéns!</h3><br> Você; está; com o <b>peso ideal</b> ;) <br>");
